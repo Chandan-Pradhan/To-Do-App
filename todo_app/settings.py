@@ -26,7 +26,7 @@ SECRET_KEY = '9ryjvaeji&$_mmw4_!f)jv3w^+htfk#7y($7c9q8k=_p449d#k'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['todo_app.herokuapp.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -42,7 +42,6 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
-    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -125,7 +124,3 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
 STATIC_ROOT = [os.path.join(BASE_DIR, 'staticfiles')]
-
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-#
-django_heroku.settings(locals())

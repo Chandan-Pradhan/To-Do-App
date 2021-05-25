@@ -7,10 +7,7 @@ verify_ssl = true
 
 [packages]
 django = "==2.2"
-gunicorn = "*"
-django-heroku = "*"
-python-decouple = "*"
-dj-database-url = "*"
+
 
 [requires]
 python_version = "3.8"
