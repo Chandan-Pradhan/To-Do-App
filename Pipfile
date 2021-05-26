@@ -10,9 +10,6 @@ django = "==2.2"
 gunicorn = "*"
 waitress = "*"
 whitenoise = "*"
-django-heroku = "*"
-python-decouple = "*"
-psycopg2 = "*"
 
 [requires]
 python_version = "3.8"
