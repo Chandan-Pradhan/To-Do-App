@@ -10,6 +10,7 @@ django = "==2.2"
 gunicorn = "*"
 waitress = "*"
 whitenoise = "*"
+psycopg2 = "*"
 
 [requires]
 python_version = "3.8"
