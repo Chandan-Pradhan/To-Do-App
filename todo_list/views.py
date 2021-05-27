@@ -12,7 +12,7 @@ def display(request):
 def add_todo(request):
     current_addeddate = timezone.now()
     content = request.POST["content"].capitalize()
-    print(request.POST)
+    # print(request.POST)
     created_obj = ToDo.objects.create(added_date=current_addeddate, text=content)
     return HttpResponseRedirect("/")
 
